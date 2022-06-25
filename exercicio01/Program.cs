@@ -55,13 +55,13 @@ namespace exercicio01
             clube.Nome = "EC Bahia";
             clube.Treinador = treinador;
 
-            List<Jogador> jogadores = new List<Jogador>();
-            jogadores.Add(jogador1);
-            jogadores.Add(jogador2);
-            jogadores.Add(jogador3);
-            jogadores.Add(jogador4);
-            jogadores.Add(jogador5);
-            clube.Jogadores = jogadores;
+            clube.Jogadores = new List<Jogador>();
+            clube.Jogadores.Add(jogador1);
+            clube.Jogadores.Add(jogador2);
+            clube.Jogadores.Add(jogador3);
+            clube.Jogadores.Add(jogador4);
+            clube.Jogadores.Add(jogador5);
+
 
             float folhaSalarialClube = clube.CalculoFolhaPagamento();
 

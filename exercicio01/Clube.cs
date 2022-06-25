@@ -25,21 +25,20 @@ public class Clube {
 
     public float CalculoFolhaPagamento() {
         
-        custoSalario = 0;
+        this.custoSalario = 0;
         
-        foreach (Jogador jogador in jogadores) {
-            custoSalario += jogador.Salario;
-        }        
-        
-        custoSalario = custoSalario + treinador.Salario;
-        return custoSalario;
+        foreach (Jogador jogador in this.jogadores) {
+            this.custoSalario += jogador.Salario;
+        }                
+        this.custoSalario = this.custoSalario + this.treinador.Salario;
+        return this.custoSalario;
     }
 
     public float VerificarMaiorSalario(){
         
         float maiorSalario = 0;
         
-        foreach (Jogador jogador in jogadores) {
+        foreach (Jogador jogador in this.jogadores) {
             if (jogador.Salario > maiorSalario) {
                 maiorSalario = jogador.Salario;
             }
@@ -49,9 +48,9 @@ public class Clube {
 
     public float VerificarMenorSalario(){
         
-        float menorSalario = jogadores[0].Salario;
+        float menorSalario = this.jogadores[0].Salario;
         
-        foreach (Jogador jogador in jogadores) {
+        foreach (Jogador jogador in this.jogadores) {
             if (jogador.Salario < menorSalario) {
                 menorSalario = jogador.Salario;
             }
@@ -61,7 +60,7 @@ public class Clube {
 
     public void MostrarPlantel() {
 
-        foreach (Jogador jogador in jogadores) {
+        foreach (Jogador jogador in this.jogadores) {
             Console.WriteLine("Jogador: " + jogador.Nome + " - " + "( n° "+ jogador.NumeroCamisa + " ) " + jogador.Posicao + " - R$ " + jogador.Salario);
         }
     }
