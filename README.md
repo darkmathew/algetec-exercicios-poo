@@ -1,6 +1,6 @@
 # Exercicios POO (IFBA - ALGETEC)
 
-Caso deseje ter acesso localmennte a estes arquivos, realize o clone do repositório. Em seu terminal rode: 
+Caso deseje ter acesso localmente a estes arquivos, realize o clone do repositório. Em seu terminal rode: 
 
 `git clone https://github.com/darkmathew/algetec-exercicios-poo`
 
